@@ -1,0 +1,1 @@
+# spirit-news-api
