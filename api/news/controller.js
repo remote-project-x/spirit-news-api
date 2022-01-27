@@ -60,7 +60,7 @@ exports.deleteNewsById = async (req, res) => {
 //Update Single News articles By ObjectId
 exports.updateNewsById = async (req, res) => {
   try {
-    const { name, description, defaultValue } = req.body;
+    // const { name, description } = req.body;
 
     const { id: _id } = req.params;
 
