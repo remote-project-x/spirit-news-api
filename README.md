@@ -1,16 +1,31 @@
 # Spirit News APIs Backend
 
-## _spirit-news-api_
+## _spirit-system-api_
 
 | METHOD | API ENDPOINT                      | Description              |
 | ------ | --------------------------------- | ------------------------ |
 | GET    | {{base_url}}/api/v1               | Application status check |
 | GET    | {{base_url}}/health-check         | Application health check |
+
+
+## _spirit-news-api_
+
+| METHOD | API ENDPOINT                      | Description              |
+| ------ | --------------------------------- | ------------------------ |
 | POST   | {{base_url}}/api/v1/news/add-news | Create a news            |
 | GET    | {{base_url}}/api/v1/news/all-news | Get All news             |
-| GET    | {{base_url}}/api/v1/news/:id      | Get a news by Id       |
-| PATCH  | {{base_url}}/api/v1/news/:id      | Update a news          |
-| DELETE | {{base_url}}/api/v1/news/:id      | Delete a news by Id    |
+| GET    | {{base_url}}/api/v1/news/:id      | Get a news by Id         |
+| PATCH  | {{base_url}}/api/v1/news/:id      | Update a news            |
+| DELETE | {{base_url}}/api/v1/news/:id      | Delete a news by Id      |
+
+## _spirit-auth-api_
+
+| METHOD | API ENDPOINT                      | Description              |
+| ------ | --------------------------------- | ------------------------ |
+| POST   | {{base_url}}/api/v1/auth/signup   | Create New User          |
+| POST   | {{base_url}}/api/v1/auth/login    | Login Existing User      |
+| GET    | {{base_url}}/api/v1/auth/users    | Get All Users            |
+| PATCH  | {{base_url}}/api/v1/auth/:id      | Update User Role         |
 
 > base_url (localhost) : http://0.0.0.0:3001
 
