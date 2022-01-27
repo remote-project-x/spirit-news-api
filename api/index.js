@@ -2,12 +2,12 @@ const express = require("express");
 const router = express.Router();
 
 /** --route:import-- */
+const auth = require("./auth");
 const news = require("./news");
-// const checkpoint = require("./checkpoint");
 
 /** --route-- */
+router.use(auth.config.ENDPOINT, auth.route);
 router.use(news.config.ENDPOINT, news.route);
-// router.use(checkpoint.config.ENDPOINT, checkpoint.route);
 
 router.get("/", (req, res) => {
   res.send("Application is running!");
