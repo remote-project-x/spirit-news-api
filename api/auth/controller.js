@@ -26,7 +26,7 @@ exports.loginUser = async (req, res) => {
     const user = await Auth.findOne({ email: req.body.email });
     if (user) {
       if (user.password == req.body.password) {
-        res.status(201).json({ message: "Login Successfully!" });
+        res.status(201).json({ message: "Login Successfully!", user: user });
       } else {
         res.status(201).json({ message: "Password Incorrect!" });
       }
